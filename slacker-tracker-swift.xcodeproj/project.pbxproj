@@ -7,21 +7,50 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B20F8C51E7E37A600DD00C9 /* Habit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B20F8C41E7E37A600DD00C9 /* Habit.swift */; };
+		3B29B9B21E797B20000EF6BF /* HabitsCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B29B9B11E797B20000EF6BF /* HabitsCollectionViewLayout.swift */; };
+		3B29B9B51E797B3E000EF6BF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B29B9B41E797B3E000EF6BF /* Constants.swift */; };
+		3B29B9B81E797B76000EF6BF /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B29B9B71E797B76000EF6BF /* UIView.swift */; };
+		3B29B9BA1E797BF8000EF6BF /* HabitCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B29B9B91E797BF8000EF6BF /* HabitCollectionViewCell.swift */; };
+		3B29B9C21E797E3C000EF6BF /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA58E381E78F13F0063A7FE /* Realm.framework */; };
+		3B29B9C31E797E3C000EF6BF /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA58E381E78F13F0063A7FE /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3B29B9C41E797E3C000EF6BF /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA58E391E78F13F0063A7FE /* RealmSwift.framework */; };
+		3B29B9C51E797E3C000EF6BF /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA58E391E78F13F0063A7FE /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3BA58E261E78EF0B0063A7FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA58E251E78EF0B0063A7FE /* AppDelegate.swift */; };
-		3BA58E281E78EF0B0063A7FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA58E271E78EF0B0063A7FE /* ViewController.swift */; };
-		3BA58E2B1E78EF0B0063A7FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BA58E291E78EF0B0063A7FE /* Main.storyboard */; };
+		3BA58E281E78EF0B0063A7FE /* HabitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA58E271E78EF0B0063A7FE /* HabitsViewController.swift */; };
 		3BA58E2D1E78EF0B0063A7FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BA58E2C1E78EF0B0063A7FE /* Assets.xcassets */; };
 		3BA58E301E78EF0B0063A7FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BA58E2E1E78EF0B0063A7FE /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		3B29B9C61E797E3C000EF6BF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3B29B9C51E797E3C000EF6BF /* RealmSwift.framework in Embed Frameworks */,
+				3B29B9C31E797E3C000EF6BF /* Realm.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		3B20F8C41E7E37A600DD00C9 /* Habit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Habit.swift; sourceTree = "<group>"; };
+		3B29B9B11E797B20000EF6BF /* HabitsCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HabitsCollectionViewLayout.swift; sourceTree = "<group>"; };
+		3B29B9B41E797B3E000EF6BF /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		3B29B9B71E797B76000EF6BF /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		3B29B9B91E797BF8000EF6BF /* HabitCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HabitCollectionViewCell.swift; sourceTree = "<group>"; };
 		3BA58E221E78EF0B0063A7FE /* slacker-tracker-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "slacker-tracker-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BA58E251E78EF0B0063A7FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3BA58E271E78EF0B0063A7FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3BA58E2A1E78EF0B0063A7FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3BA58E271E78EF0B0063A7FE /* HabitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsViewController.swift; sourceTree = "<group>"; };
 		3BA58E2C1E78EF0B0063A7FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3BA58E2F1E78EF0B0063A7FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3BA58E311E78EF0B0063A7FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BA58E381E78F13F0063A7FE /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		3BA58E391E78F13F0063A7FE /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +58,47 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B29B9C41E797E3C000EF6BF /* RealmSwift.framework in Frameworks */,
+				3B29B9C21E797E3C000EF6BF /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B29B9B01E797AE1000EF6BF /* Habits */ = {
+			isa = PBXGroup;
+			children = (
+				3BA58E271E78EF0B0063A7FE /* HabitsViewController.swift */,
+				3B29B9B11E797B20000EF6BF /* HabitsCollectionViewLayout.swift */,
+				3B29B9B91E797BF8000EF6BF /* HabitCollectionViewCell.swift */,
+				3B20F8C41E7E37A600DD00C9 /* Habit.swift */,
+			);
+			name = Habits;
+			sourceTree = "<group>";
+		};
+		3B29B9B31E797B31000EF6BF /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				3B29B9B41E797B3E000EF6BF /* Constants.swift */,
+			);
+			name = Misc;
+			sourceTree = "<group>";
+		};
+		3B29B9B61E797B63000EF6BF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3B29B9B71E797B76000EF6BF /* UIView.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		3BA58E191E78EF0B0063A7FE = {
 			isa = PBXGroup;
 			children = (
 				3BA58E241E78EF0B0063A7FE /* slacker-tracker-swift */,
 				3BA58E231E78EF0B0063A7FE /* Products */,
+				3BA58E371E78F13D0063A7FE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +113,24 @@
 		3BA58E241E78EF0B0063A7FE /* slacker-tracker-swift */ = {
 			isa = PBXGroup;
 			children = (
+				3B29B9B61E797B63000EF6BF /* Extensions */,
+				3B29B9B31E797B31000EF6BF /* Misc */,
+				3B29B9B01E797AE1000EF6BF /* Habits */,
 				3BA58E251E78EF0B0063A7FE /* AppDelegate.swift */,
-				3BA58E271E78EF0B0063A7FE /* ViewController.swift */,
-				3BA58E291E78EF0B0063A7FE /* Main.storyboard */,
 				3BA58E2C1E78EF0B0063A7FE /* Assets.xcassets */,
 				3BA58E2E1E78EF0B0063A7FE /* LaunchScreen.storyboard */,
 				3BA58E311E78EF0B0063A7FE /* Info.plist */,
 			);
 			path = "slacker-tracker-swift";
+			sourceTree = "<group>";
+		};
+		3BA58E371E78F13D0063A7FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3BA58E381E78F13F0063A7FE /* Realm.framework */,
+				3BA58E391E78F13F0063A7FE /* RealmSwift.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +143,7 @@
 				3BA58E1E1E78EF0B0063A7FE /* Sources */,
 				3BA58E1F1E78EF0B0063A7FE /* Frameworks */,
 				3BA58E201E78EF0B0063A7FE /* Resources */,
+				3B29B9C61E797E3C000EF6BF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,7 +196,6 @@
 			files = (
 				3BA58E301E78EF0B0063A7FE /* LaunchScreen.storyboard in Resources */,
 				3BA58E2D1E78EF0B0063A7FE /* Assets.xcassets in Resources */,
-				3BA58E2B1E78EF0B0063A7FE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,22 +206,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BA58E281E78EF0B0063A7FE /* ViewController.swift in Sources */,
+				3B29B9B81E797B76000EF6BF /* UIView.swift in Sources */,
+				3BA58E281E78EF0B0063A7FE /* HabitsViewController.swift in Sources */,
 				3BA58E261E78EF0B0063A7FE /* AppDelegate.swift in Sources */,
+				3B20F8C51E7E37A600DD00C9 /* Habit.swift in Sources */,
+				3B29B9B21E797B20000EF6BF /* HabitsCollectionViewLayout.swift in Sources */,
+				3B29B9B51E797B3E000EF6BF /* Constants.swift in Sources */,
+				3B29B9BA1E797BF8000EF6BF /* HabitCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3BA58E291E78EF0B0063A7FE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3BA58E2A1E78EF0B0063A7FE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3BA58E2E1E78EF0B0063A7FE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -260,6 +326,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UX2RCP32D2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "slacker-tracker-swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.alexkatz.slacker-tracker-swift";
@@ -273,6 +343,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UX2RCP32D2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "slacker-tracker-swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.alexkatz.slacker-tracker-swift";
@@ -300,6 +374,7 @@
 				3BA58E361E78EF0B0063A7FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
