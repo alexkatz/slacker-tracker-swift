@@ -6,12 +6,12 @@ class HabitsCollectionViewLayout: UICollectionViewFlowLayout {
   private var visibleIndexPathSet = Set<IndexPath>()
   private var latestDelta = CGFloat(0)
   
-  override init() {
+  init(cellHeight: CGFloat? = nil) {
     super.init()
     dynamicAnimator = UIDynamicAnimator(collectionViewLayout: self)
     minimumInteritemSpacing = Constants.padding
     minimumLineSpacing = Constants.padding
-    itemSize = CGSize(width: UIScreen.main.bounds.width - (Constants.padding * 2), height: 120)
+    itemSize = CGSize(width: UIScreen.main.bounds.width - (Constants.padding * 2), height: cellHeight ?? Constants.HabitCellHeight)
   }
   
   required init?(coder aDecoder: NSCoder) {

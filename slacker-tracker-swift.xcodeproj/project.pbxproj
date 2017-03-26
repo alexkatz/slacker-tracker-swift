@@ -20,6 +20,11 @@
 		3BA58E281E78EF0B0063A7FE /* HabitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA58E271E78EF0B0063A7FE /* HabitsViewController.swift */; };
 		3BA58E2D1E78EF0B0063A7FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BA58E2C1E78EF0B0063A7FE /* Assets.xcassets */; };
 		3BA58E301E78EF0B0063A7FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BA58E2E1E78EF0B0063A7FE /* LaunchScreen.storyboard */; };
+		3BC01C291E7F19DD00D2D23D /* HabitEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC01C281E7F19DD00D2D23D /* HabitEntry.swift */; };
+		3BC01C2B1E7F1AD500D2D23D /* GoalPeriod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC01C2A1E7F1AD500D2D23D /* GoalPeriod.swift */; };
+		3BC01C2E1E7F28EB00D2D23D /* AddHabitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC01C2D1E7F28EB00D2D23D /* AddHabitViewController.swift */; };
+		3BF2F6BD1E876B3B00F570E6 /* AddHabitNameCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF2F6BB1E876B3B00F570E6 /* AddHabitNameCollectionViewCell.swift */; };
+		3BF2F6BE1E876B3B00F570E6 /* AddHabitNameCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BF2F6BC1E876B3B00F570E6 /* AddHabitNameCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -51,6 +56,11 @@
 		3BA58E311E78EF0B0063A7FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BA58E381E78F13F0063A7FE /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
 		3BA58E391E78F13F0063A7FE /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		3BC01C281E7F19DD00D2D23D /* HabitEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HabitEntry.swift; sourceTree = "<group>"; };
+		3BC01C2A1E7F1AD500D2D23D /* GoalPeriod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalPeriod.swift; sourceTree = "<group>"; };
+		3BC01C2D1E7F28EB00D2D23D /* AddHabitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddHabitViewController.swift; sourceTree = "<group>"; };
+		3BF2F6BB1E876B3B00F570E6 /* AddHabitNameCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddHabitNameCollectionViewCell.swift; sourceTree = "<group>"; };
+		3BF2F6BC1E876B3B00F570E6 /* AddHabitNameCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddHabitNameCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,10 +79,13 @@
 		3B29B9B01E797AE1000EF6BF /* Habits */ = {
 			isa = PBXGroup;
 			children = (
+				3B20F8C41E7E37A600DD00C9 /* Habit.swift */,
+				3BC01C2D1E7F28EB00D2D23D /* AddHabitViewController.swift */,
 				3BA58E271E78EF0B0063A7FE /* HabitsViewController.swift */,
 				3B29B9B11E797B20000EF6BF /* HabitsCollectionViewLayout.swift */,
 				3B29B9B91E797BF8000EF6BF /* HabitCollectionViewCell.swift */,
-				3B20F8C41E7E37A600DD00C9 /* Habit.swift */,
+				3BF2F6BB1E876B3B00F570E6 /* AddHabitNameCollectionViewCell.swift */,
+				3BF2F6BC1E876B3B00F570E6 /* AddHabitNameCollectionViewCell.xib */,
 			);
 			name = Habits;
 			sourceTree = "<group>";
@@ -81,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				3B29B9B41E797B3E000EF6BF /* Constants.swift */,
+				3BC01C2A1E7F1AD500D2D23D /* GoalPeriod.swift */,
 			);
 			name = Misc;
 			sourceTree = "<group>";
@@ -113,6 +127,7 @@
 		3BA58E241E78EF0B0063A7FE /* slacker-tracker-swift */ = {
 			isa = PBXGroup;
 			children = (
+				3BC01C2C1E7F288B00D2D23D /* HabitEntry */,
 				3B29B9B61E797B63000EF6BF /* Extensions */,
 				3B29B9B31E797B31000EF6BF /* Misc */,
 				3B29B9B01E797AE1000EF6BF /* Habits */,
@@ -131,6 +146,14 @@
 				3BA58E391E78F13F0063A7FE /* RealmSwift.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3BC01C2C1E7F288B00D2D23D /* HabitEntry */ = {
+			isa = PBXGroup;
+			children = (
+				3BC01C281E7F19DD00D2D23D /* HabitEntry.swift */,
+			);
+			name = HabitEntry;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +219,7 @@
 			files = (
 				3BA58E301E78EF0B0063A7FE /* LaunchScreen.storyboard in Resources */,
 				3BA58E2D1E78EF0B0063A7FE /* Assets.xcassets in Resources */,
+				3BF2F6BE1E876B3B00F570E6 /* AddHabitNameCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,11 +230,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BF2F6BD1E876B3B00F570E6 /* AddHabitNameCollectionViewCell.swift in Sources */,
 				3B29B9B81E797B76000EF6BF /* UIView.swift in Sources */,
 				3BA58E281E78EF0B0063A7FE /* HabitsViewController.swift in Sources */,
 				3BA58E261E78EF0B0063A7FE /* AppDelegate.swift in Sources */,
 				3B20F8C51E7E37A600DD00C9 /* Habit.swift in Sources */,
+				3BC01C2B1E7F1AD500D2D23D /* GoalPeriod.swift in Sources */,
 				3B29B9B21E797B20000EF6BF /* HabitsCollectionViewLayout.swift in Sources */,
+				3BC01C291E7F19DD00D2D23D /* HabitEntry.swift in Sources */,
+				3BC01C2E1E7F28EB00D2D23D /* AddHabitViewController.swift in Sources */,
 				3B29B9B51E797B3E000EF6BF /* Constants.swift in Sources */,
 				3B29B9BA1E797BF8000EF6BF /* HabitCollectionViewCell.swift in Sources */,
 			);
